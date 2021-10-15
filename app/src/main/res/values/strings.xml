@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Test</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_intro">핸드폰 속 작은 책자</string>
+    <string name="team_name">친절한 손주들</string>
+    <string name="home">홈</string>
+    <string name="guide">설명서</string>
+    <string name="helper">도우미</string>
+    <string name="video">동영상</string>
+    <string name="user">내 공간</string>
+</resources>
