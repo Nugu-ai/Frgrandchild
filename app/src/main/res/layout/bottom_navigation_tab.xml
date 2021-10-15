@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="27dp"
             android:layout_marginBottom="30dp"
             android:src="@drawable/selector_bottom_navi_home_icon" />
 
@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="31dp"
+            android:layout_marginLeft="39dp"
             android:layout_marginBottom="5px"
             android:fontFamily="@font/notosanskr"
             android:text="@string/home"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerInParent="true"
-            android:layout_marginLeft="18dp"
+            android:layout_marginLeft="27dp"
             android:layout_marginBottom="30dp"
             android:src="@drawable/selector_bottom_navi_guide_icon" />
 
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="7dp"
             android:layout_marginBottom="5px"
             android:fontFamily="@font/notosanskr"
             android:text="@string/guide"
@@ -66,35 +66,6 @@
 
             />
 
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/btn_bottom_navi_helper_tab"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="29.8dp"
-            android:src="@drawable/selector_bottom_navi_helper_icon" />
-
-        <TextView
-            android:id="@+id/some_id2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="15dp"
-            android:layout_marginBottom="5px"
-            android:fontFamily="@font/notosanskr"
-            android:text="@string/helper"
-            android:textColor="#363636"
-            android:textSize="11sp"
-
-            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -107,7 +78,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="13dp"
+            android:layout_marginLeft="27dp"
             android:layout_marginBottom="30dp"
             android:src="@drawable/selector_bottom_navi_video_icon" />
 
@@ -135,14 +106,14 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="27dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="25dp"
             android:src="@drawable/selector_bottom_navi_user_icon" />
         <TextView
             android:id="@+id/some_id4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginLeft="19dp"
+            android:layout_marginLeft="27dp"
             android:layout_marginBottom="5px"
             android:fontFamily="@font/notosanskr"
             android:text="@string/user"

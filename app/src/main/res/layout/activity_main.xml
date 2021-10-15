@@ -39,14 +39,14 @@
 
         />
 
-    <androidx.viewpager.widget.ViewPager
+    <com.example.test.CustomViewPager
         android:id="@+id/vp_ac_main_frag_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@id/tl_ac_main_bottom_menu"
         android:layout_below="@id/rectangle">
 
-    </androidx.viewpager.widget.ViewPager>
+    </com.example.test.CustomViewPager>
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tl_ac_main_bottom_menu"
