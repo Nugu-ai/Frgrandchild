@@ -3,12 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".fragment.GuideFragment">
+    tools:context=".fragment.GuideFragment"
+    android:background="#E5E5E5">
+
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/guide" />
+        android:text="@string/guide"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"/>
 
 </FrameLayout>
