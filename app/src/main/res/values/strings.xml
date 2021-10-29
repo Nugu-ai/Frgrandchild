@@ -10,4 +10,5 @@
     <string name="video">동영상 보기</string>
     <string name="user">내 공간</string>
     <string name="test">상단 바</string>
+    <string name="setting">설정</string>
 </resources>

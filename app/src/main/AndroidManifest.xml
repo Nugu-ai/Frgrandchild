@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".FloatingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true" />
+        <activity
             android:name=".IntroActivity"
             android:exported="true">
             <intent-filter>
@@ -20,9 +26,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
