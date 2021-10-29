@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Test</string>
+    <string name="app_name">내 손 주</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="main_intro">핸드폰 속 작은 책자</string>
@@ -9,4 +9,6 @@
     <string name="helper">도우미</string>
     <string name="video">동영상 보기</string>
     <string name="user">내 공간</string>
+    <string name="test">상단 바</string>
+    <string name="setting">설정</string>
 </resources>

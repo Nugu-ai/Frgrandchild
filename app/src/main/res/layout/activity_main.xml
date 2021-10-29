@@ -5,24 +5,60 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:fitsSystemWindows="true"
-    tools:context=".MainActivity">
-    <!-- Rectangle 1 -->
-    <View
-        android:id="@+id/rectangle"
+    tools:context=".MainActivity"
+    android:background="#E5E5E5">
+
+    <com.example.test.CustomViewPager
+        android:id="@+id/vp_ac_main_frag_pager"
         android:layout_width="match_parent"
-        android:layout_height="97dp"
+        android:layout_height="673dp"
+        android:layout_above="@id/tl_ac_main_bottom_menu"
+        android:layout_below="@id/rectangle"
+        android:layout_marginTop="-42dp">
+
+    </com.example.test.CustomViewPager>
+
+    <View
+        android:id="@+id/status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/rectangle" />
-
+        android:background="@drawable/status_bar" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="116dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/fr_text" />
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/higher_bar"></ImageView>
+
+    <TextView
+        android:id="@+id/highbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/notosanskr"
+        android:text="@string/home"
+        android:textColor="#082032"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/setting"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/settings" />
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
@@ -30,33 +66,27 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/tl_ac_main_bottom_menu"
         android:layout_alignParentEnd="true"
-        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:src="@drawable/child_floating_logo"
+
         app:backgroundTint="@color/orange1"
         app:elevation="10dp"
-        app:maxImageSize="65dp"
         app:fabCustomSize="65dp"
-
-        />
-
-    <com.example.test.CustomViewPager
-        android:id="@+id/vp_ac_main_frag_pager"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/tl_ac_main_bottom_menu"
-        android:layout_below="@id/rectangle">
-
-    </com.example.test.CustomViewPager>
+        app:maxImageSize="65dp" />
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tl_ac_main_bottom_menu"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
-        app:tabIndicator="@drawable/tab_selector"
         android:background="#FFFFFF"
         android:elevation="5dp"
-        app:tabIndicatorColor="#FED869" />
+        app:tabBackground="@drawable/tab_background"
+        app:tabIndicator="@drawable/tab_selector"
+        app:tabIndicatorColor="#87A1FF" />
 
 
 </RelativeLayout>

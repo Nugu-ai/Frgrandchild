@@ -4,11 +4,17 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/appicon"
+        android:icon="@mipmap/ic_frchild"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/appicon"
+        android:roundIcon="@mipmap/ic_frchild_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name=".FloatingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="true" />
         <activity
             android:name=".IntroActivity"
             android:exported="true">
@@ -20,9 +26,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>
