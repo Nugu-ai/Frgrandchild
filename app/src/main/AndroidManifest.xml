@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".FaqActivity"
+            android:exported="true" />
+        <activity
+            android:name=".IconActivity"
+            android:exported="true" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:exported="true" />
+        <activity
             android:name=".FloatingActivity"
             android:exported="true" />
         <activity

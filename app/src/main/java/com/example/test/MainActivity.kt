@@ -41,10 +41,7 @@ class MainActivity : AppCompatActivity() {
             val nextIntent = Intent(this, SettingActivity::class.java)
             startActivity(nextIntent)
         }
-        fab.setOnClickListener{
-            val nextIntent = Intent(this, FloatingActivity::class.java)
-            startActivity(nextIntent)
-        }
+
 
 
 
