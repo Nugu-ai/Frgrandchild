@@ -45,9 +45,6 @@ class MainActivity : AppCompatActivity() {
             val nextIntent = Intent(this, FloatingActivity::class.java)
             startActivity(nextIntent)
         }
-
-
-
     }
     private fun configureBottomNavigation(){
 

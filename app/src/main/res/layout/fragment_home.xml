@@ -1,4 +1,5 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -6,12 +7,99 @@
     android:fitsSystemWindows="true"
     android:background="#E5E5E5">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
-        android:text="@string/home"
-        android:textColor="@color/black"/>
+    <ImageButton
+        android:id="@+id/home_btn1"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/home_rectangle1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
 
-</FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr"
+        android:text="즐겨찾기"
+        android:textColor="#6B5A30"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_btn1"
+        app:layout_constraintEnd_toEndOf="@+id/home_btn1"
+        app:layout_constraintStart_toStartOf="@+id/home_btn1"
+        app:layout_constraintTop_toTopOf="@+id/home_btn1"
+        app:layout_constraintVertical_bias="0.50" />
+
+    <ImageButton
+        android:id="@+id/home_btn2"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/home_rectangle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.730"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.408" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr"
+        android:text=" 승호의\n앱 설명"
+        android:textColor="#6B5A30"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_btn2"
+        app:layout_constraintEnd_toEndOf="@+id/home_btn2"
+        app:layout_constraintStart_toStartOf="@+id/home_btn2"
+        app:layout_constraintTop_toTopOf="@+id/home_btn2"
+        app:layout_constraintVertical_bias="0.50" />
+    <ImageButton
+        android:id="@+id/home_btn3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/home_rectangle2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr"
+        android:text="아이콘\n  사전"
+        android:textColor="#6B5A30"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_btn3"
+        app:layout_constraintEnd_toEndOf="@+id/home_btn3"
+        app:layout_constraintStart_toStartOf="@+id/home_btn3"
+        app:layout_constraintTop_toTopOf="@+id/home_btn3"
+        app:layout_constraintVertical_bias="0.50" />
+    <ImageButton
+        android:id="@+id/home_btn4"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@drawable/home_rectangle1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.730"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/notosanskr"
+        android:text="자주 묻는\n     질문"
+        android:textColor="#6B5A30"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_btn4"
+        app:layout_constraintEnd_toEndOf="@+id/home_btn4"
+        app:layout_constraintStart_toStartOf="@+id/home_btn4"
+        app:layout_constraintTop_toTopOf="@+id/home_btn4"
+        app:layout_constraintVertical_bias="0.50" />
+</androidx.constraintlayout.widget.ConstraintLayout>
