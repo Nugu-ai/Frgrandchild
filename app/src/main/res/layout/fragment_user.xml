@@ -1,18 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".fragment.UserFragment"
-    android:fitsSystemWindows="true"
-    android:background="#E5E5E5">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/user"
-        android:layout_marginTop="50dp"
-        android:textColor="@color/black"/>
+
+<FrameLayout
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E5E5E5"
+    android:fitsSystemWindows="true"
+    tools:context=".fragment.VideoFragment"
+    tools:ignore="MissingConstraints">
+
+    <!--링크 연결 및 이미지 아래 글씨 넣기, 이미지 사이즈 조절,-->
+
 
 </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent"
+        android:weightSum="4"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        tools:layout_editor_absoluteX="0dp">
+        <TextView
+            android:id="@+id/option_name_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:text="Name"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/option_name_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:text="Favorites"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/option_name_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background"
+            android:text="How to Use"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/option_name_4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/background"
+            android:text="Feedbacks"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.85" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

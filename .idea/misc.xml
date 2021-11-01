@@ -5,9 +5,18 @@
       <map>
         <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22083333333333333" />
         <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/drawable/ic_launcher_background.xml" value="0.22083333333333333" />
+        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/drawable/selector_bottom_navi_video_icon.xml" value="0.11666666666666667" />
+        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/activity_faq.xml" value="0.16145833333333334" />
+        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/activity_favorite.xml" value="0.16145833333333334" />
+        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/activity_floating.xml" value="0.16145833333333334" />
+        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/activity_icon.xml" value="0.16145833333333334" />
         <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/activity_setting.xml" value="0.13378378378378378" />
+        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/bottom_navigation_tab.xml" value="0.16145833333333334" />
+        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_guide.xml" value="0.16145833333333334" />
         <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_home.xml" value="0.21302083333333333" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_video.xml" value="0.2115036231884058" />
+        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_user.xml" value="0.22" />
+        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_video.xml" value="0.15" />
         <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22083333333333333" />
         <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/drawable-v24/ellipse_1.xml" value="0.13020833333333334" />

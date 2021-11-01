@@ -9,4 +9,8 @@
         android:name="com.example.test.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.test.fragment.VideoFragment"
+        android:label="VideoFragment" />
 </navigation>
