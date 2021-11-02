@@ -25,46 +25,43 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="parent"
-        android:weightSum="3"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
+
         <ImageView
             android:id="@+id/option_1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:background="@drawable/background"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
-            android:src="@drawable/youtube_thumbnail1"
             android:gravity="center"
-            />
+            android:src="@drawable/youtube_thumbnail1" />
 
         <ImageView
             android:id="@+id/option_2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:layout_marginBottom="10dp"
+            android:layout_weight="1"
             android:background="@drawable/background"
 
-            android:gravity="center"
-            />
+            android:gravity="center" />
+
         <ImageView
             android:id="@+id/option_3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
             android:layout_marginBottom="10dp"
+            android:layout_weight="1"
             android:background="@drawable/background"
 
-            android:gravity="center"
-            />
-
-
+            android:gravity="center" />
 
 
     </LinearLayout>
@@ -74,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85" />
+        app:layout_constraintGuide_begin="719dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

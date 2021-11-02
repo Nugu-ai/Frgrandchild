@@ -6,19 +6,19 @@
     android:layout_height="match_parent">
 
 
-<FrameLayout
-    android:id="@+id/frameLayout"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="#E5E5E5"
-    android:fitsSystemWindows="true"
-    tools:context=".fragment.VideoFragment"
-    tools:ignore="MissingConstraints">
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E5E5E5"
+        android:fitsSystemWindows="true"
+        tools:context=".fragment.VideoFragment"
+        tools:ignore="MissingConstraints">
 
-    <!--링크 연결 및 이미지 아래 글씨 넣기, 이미지 사이즈 조절,-->
+        <!--링크 연결 및 이미지 아래 글씨 넣기, 이미지 사이즈 조절,-->
 
 
-</FrameLayout>
+    </FrameLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -38,7 +38,7 @@
             android:layout_weight="1"
             android:background="@drawable/background"
             android:layout_marginBottom="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:textColor="@color/black"
             android:text="Name"
             android:textSize="15sp"
@@ -85,12 +85,12 @@
 
         </LinearLayout>
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.85" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
