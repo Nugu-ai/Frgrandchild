@@ -9,8 +9,11 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+import android.text.util.Linkify
+import kotlinx.android.synthetic.main.fragment_video.*
 
+
+class MainActivity : AppCompatActivity() {
     private lateinit var tabLayout: TabLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,10 +21,11 @@ class MainActivity : AppCompatActivity() {
         val window = window
         window.setFlags(
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        )
         configureBottomNavigation()
         tabLayout = findViewById(R.id.tl_ac_main_bottom_menu)
-        tabLayout.addOnTabSelectedListener(object: TabLayout.OnTabSelectedListener{
+        tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabReselected(tab: TabLayout.Tab?) {
             }
 
@@ -29,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onTabSelected(tab: TabLayout.Tab?) {
-                when(tab!!.position){
+                when (tab!!.position) {
                     0 -> highbar.text = "홈"
                     1 -> highbar.text = "친절한 설명서"
                     2 -> highbar.text = "동영상 보기"
@@ -38,25 +42,38 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
-        setting.setOnClickListener{
+        setting.setOnClickListener {
             val nextIntent = Intent(this, SettingActivity::class.java)
             startActivity(nextIntent)
         }
-        fab.setOnClickListener{
+        fab.setOnClickListener {
             val nextIntent = Intent(this, FloatingActivity::class.java)
             startActivity(nextIntent)
         }
     }
-    private fun configureBottomNavigation(){
+
+    private fun configureBottomNavigation() {
 
         vp_ac_main_frag_pager.adapter = MainFragmentStatePagerAdapter(supportFragmentManager, 4)
         tl_ac_main_bottom_menu.setupWithViewPager(vp_ac_main_frag_pager)
-        val bottomNaviLayout: View = this.layoutInflater.inflate(R.layout.bottom_navigation_tab, null, false)
-        tl_ac_main_bottom_menu.getTabAt(0)!!.customView = bottomNaviLayout.findViewById(R.id.btn_bottom_navi_home_tab) as RelativeLayout
-        tl_ac_main_bottom_menu.getTabAt(1)!!.customView = bottomNaviLayout.findViewById(R.id.btn_bottom_navi_guide_tab) as RelativeLayout
-        tl_ac_main_bottom_menu.getTabAt(2)!!.customView = bottomNaviLayout.findViewById(R.id.btn_bottom_navi_video_tab) as RelativeLayout
-        tl_ac_main_bottom_menu.getTabAt(3)!!.customView = bottomNaviLayout.findViewById(R.id.btn_bottom_navi_user_tab) as RelativeLayout
+        val bottomNaviLayout: View =
+            this.layoutInflater.inflate(R.layout.bottom_navigation_tab, null, false)
+        tl_ac_main_bottom_menu.getTabAt(0)!!.customView =
+            bottomNaviLayout.findViewById(R.id.btn_bottom_navi_home_tab) as RelativeLayout
+        tl_ac_main_bottom_menu.getTabAt(1)!!.customView =
+            bottomNaviLayout.findViewById(R.id.btn_bottom_navi_guide_tab) as RelativeLayout
+        tl_ac_main_bottom_menu.getTabAt(2)!!.customView =
+            bottomNaviLayout.findViewById(R.id.btn_bottom_navi_video_tab) as RelativeLayout
+        tl_ac_main_bottom_menu.getTabAt(3)!!.customView =
+            bottomNaviLayout.findViewById(R.id.btn_bottom_navi_user_tab) as RelativeLayout
+
     }
 
 
+
 }
+
+
+
+
+

@@ -11,5 +11,8 @@
     <string name="user">내 공간</string>
     <string name="test">상단 바</string>
     <string name="setting">설정</string>
+    <string name="tv_link">
+        <a href ="https://youtu.be/kc2SthzglCM"><b>친절한 손주들 소개</b></a>
+       </string>
 
 </resources>
