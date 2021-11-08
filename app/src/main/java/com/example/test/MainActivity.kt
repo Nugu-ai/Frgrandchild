@@ -4,13 +4,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
-import android.widget.Button
 import android.widget.RelativeLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_user.*
-import kotlinx.android.synthetic.main.fragment_video.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -19,12 +16,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setContentView(R.layout.fragment_user)
 //        여기다가 on 클릭 추가
-        btn_user1.setOnClickListener {
-            val intent = Intent(this, SettingActivity::class.java)
-            startActivity(intent)
-        }
 
         val window = window
         window.setFlags(
@@ -52,32 +44,6 @@ class MainActivity : AppCompatActivity() {
                 }
             },
         )
-        with(btn_user1) {
-            window.setFlags(
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
-                WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
-            )
-            configureBottomNavigation()
-            tabLayout = findViewById(R.id.tl_ac_main_bottom_menu)
-            tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
-                override fun onTabReselected(tab: TabLayout.Tab?) {
-                }
-
-                override fun onTabUnselected(tab: TabLayout.Tab?) {
-                }
-
-                override fun onTabSelected(tab: TabLayout.Tab?) {
-                    when (tab!!.position) {
-                        0 -> highbar.text = "홈"
-                        1 -> highbar.text = "친절한 설명서"
-                        2 -> highbar.text = "동영상 보기"
-                        3 -> highbar.text = "내 공간"
-
-                    }
-                }
-            })
-
-        }
 
 
         setting.setOnClickListener {

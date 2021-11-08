@@ -3,20 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/drawable/color1.xml" value="0.1662162162162162" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/activity_intro.xml" value="0.10758196721311475" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/activity_link.xml" value="0.11168032786885246" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/activity_link2.xml" value="0.10758196721311475" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/activity_main.xml" value="0.11168032786885246" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/bottom_navigation_tab.xml" value="0.11168032786885246" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_bookmark.xml" value="0.1" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_call.xml" value="0.1" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_guide.xml" value="0.10758196721311475" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_home.xml" value="0.1" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_how_to_use.xml" value="0.17094594594594595" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_profile.xml" value="0.17027027027027028" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_user.xml" value="0.22" />
-        <entry key="..\:/Android/AndroidStudioProjects/Frgrandchild/app/src/main/res/layout/fragment_video.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/drawable-v24/ellipse_1.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/drawable-v24/ellipse_2.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/drawable-v24/ellipse_3.xml" value="0.13020833333333334" />
@@ -55,6 +41,8 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/activity_setting.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/bottom_navigation_tab.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/floating_msg.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_bookmark.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_call.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_call2.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_feedbacks.xml" value="0.13677536231884058" />
@@ -62,11 +50,17 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_guide.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_helper.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_home.xml" value="0.12" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_how_to_use.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_main.xml" value="0.10666666666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_start.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_user.xml" value="0.18769716088328076" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_video.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/fragment_video.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/layout_floating_camera.xml" value="0.1322463768115942" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/layout_floating_control_view.xml" value="0.22" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/layout_floating_kakaotalk.xml" value="0.1322463768115942" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/layout/layout_floating_msg.xml" value="0.1" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/mipmap-anydpi-v26/ic_frchild.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/FrChildAppTest/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Test2/app/src/main/res/layout/activity_main.xml" value="0.15806159420289856" />
