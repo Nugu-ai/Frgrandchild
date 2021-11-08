@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--Root container-->
+    <RelativeLayout
+        android:id="@+id/root_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        tools:ignore="UselessParent">
+        <!--View while view is collapsed-->
+        <RelativeLayout
+            android:id="@+id/collapse_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/fab2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/child_floating_logo" />
+
+            <ImageView
+                android:id="@+id/close_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/delete_icon" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/expanded_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#FED869"
+            android:orientation="horizontal"
+
+            android:padding="8dp">
+            <ImageView
+                android:id="@+id/prev_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/move_previous"
+                />
+            <TextView
+                android:id="@+id/test1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanskr"
+                android:textColor="#332A0B"
+                android:text="카메라는 현재 테스트 단계입니다."
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/test2"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanskr"
+                android:textColor="#332A0B"
+                android:text="카메라는 현재 테스트 단계입니다1"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/test3"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/notosanskr"
+                android:textColor="#332A0B"
+                android:text="카메라는 현재 테스트 단계입니다2"
+                android:textSize="19sp" />
+            <ImageView
+                android:id="@+id/next_btn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/move_next"
+                />
+            <ImageView
+                android:id="@+id/close_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/delete_icon" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
 
         <service android:name=".FloatingControlService" />
+        <service android:name=".FloatingControlMsg" />
+        <service android:name=".FloatingControlCamera" />
+        <service android:name=".FloatingControlKakaotalk" />
 
         <activity
             android:name=".FaqActivity"

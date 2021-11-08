@@ -21,7 +21,7 @@ import kotlin.math.abs
 import kotlin.math.roundToInt
 
 
-class FloatingControlService :Service() {
+class FloatingControlKakaotalk :Service() {
     private var LAYOUT_FLAG: Int = 0
     private var windowManager: WindowManager? = null
     private var floatingControlView: ViewGroup? = null
@@ -29,7 +29,7 @@ class FloatingControlService :Service() {
     var iconWidth = 0
     private var screenHeight = 0
     private var screenWidth = 0
-//    private var hideHandler: Handler? = null
+    //    private var hideHandler: Handler? = null
 //    private var hideRunnable: Runnable? = null
     override fun onBind(intent: Intent?): IBinder? {
         return null
@@ -41,7 +41,7 @@ class FloatingControlService :Service() {
         }
         if(floatingControlView == null ){
             val li = getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            floatingControlView = li.inflate(R.layout.layout_floating_control_view, null) as ViewGroup?
+            floatingControlView = li.inflate(R.layout.layout_floating_kakaotalk, null) as ViewGroup?
 
         }
         if (intent?.action != null && intent.action.equals(
@@ -193,7 +193,7 @@ class FloatingControlService :Service() {
             }
         })
         floatingControlView?.findViewById<View>(R.id.close_btn)?.setOnClickListener{
-            val intentStop = Intent(this, FloatingControlService::class.java)
+            val intentStop = Intent(this, FloatingControlKakaotalk::class.java)
             intentStop.action = ACTION_STOP_FOREGROUND
             startService(intentStop)
         }

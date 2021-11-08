@@ -12,9 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_floating.*
 
 
-
-
-
 class FloatingActivity : AppCompatActivity() {
     private lateinit var getResult: ActivityResultLauncher<Intent>
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,10 +36,44 @@ class FloatingActivity : AppCompatActivity() {
        btn_call.setOnClickListener {
             if(checkHasDrawOverlayPermissions()) {
                 startService(Intent(this, FloatingControlService::class.java))
-                var intent = Intent(Intent.ACTION_DIAL)
+                val intent = Intent(Intent.ACTION_DIAL)
                 if(intent.resolveActivity(packageManager) != null){
                     startActivity(intent)
                 }
+            }else{
+                navigateDrawPermissionSetting()
+            }
+       }
+       btn_msg.setOnClickListener{
+           if(checkHasDrawOverlayPermissions()) {
+               startService(Intent(this, FloatingControlMsg::class.java))
+               val intent = packageManager.getLaunchIntentForPackage("com.samsung.android.messaging")
+               startActivity(intent)
+           }else{
+               navigateDrawPermissionSetting()
+           }
+       }
+        btn_camera.setOnClickListener{
+            if(checkHasDrawOverlayPermissions()) {
+                startService(Intent(this, FloatingControlCamera::class.java))
+                val intent = packageManager.getLaunchIntentForPackage("com.sec.android.app.camera")
+                startActivity(intent)
+            }else{
+                navigateDrawPermissionSetting()
+            }
+        }
+        btn_kakaotalk.setOnClickListener{
+            if(checkHasDrawOverlayPermissions()) {
+                startService(Intent(this, FloatingControlKakaotalk::class.java))
+                val kakaoPackage = "com.kakao.talk"
+                val intentKakao = packageManager.getLaunchIntentForPackage(kakaoPackage)
+                try {
+                    startActivity(intentKakao)
+                } catch (e: Exception) {
+                    val intentPlayStore = Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + kakaoPackage)) // 설치 링크를 인텐트에 담아
+                    startActivity(intentPlayStore) // 플레이스토어로 이동
+                }
+
             }else{
                 navigateDrawPermissionSetting()
             }
