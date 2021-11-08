@@ -5,40 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
-    <FrameLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E5E5E5"
-        android:fitsSystemWindows="true"
-        tools:context=".fragment.VideoFragment"
-        tools:ignore="MissingConstraints">
-
-        <!--링크 연결 및 이미지 아래 글씨 넣기, 이미지 사이즈 조절,-->
-
-
-    </FrameLayout>
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:paddingStart="15dp"
-        android:paddingEnd="15dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:layout_margin="25dp"
         android:weightSum="6"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:context=".MainActivity">
 
         <Button
             android:id="@+id/btn_user1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
             android:layout_weight="1"
             android:background="@drawable/background"
             android:drawableLeft="@drawable/user"
@@ -54,8 +41,8 @@
             android:id="@+id/btn_user2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
             android:layout_weight="1"
             android:background="@drawable/background"
             android:drawableLeft="@drawable/null_star"
@@ -71,8 +58,8 @@
             android:id="@+id/btn_user3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
             android:layout_weight="1"
             android:background="@drawable/background"
             android:drawableLeft="@drawable/question_mark"
@@ -82,14 +69,15 @@
             android:paddingLeft="13dp"
             android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            />
 
         <Button
             android:id="@+id/btn_user4"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
             android:layout_weight="1"
             android:background="@drawable/background"
             android:drawableLeft="@drawable/question_mark"
