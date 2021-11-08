@@ -25,65 +25,83 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="parent"
-        android:weightSum="4"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
+        android:weightSum="6"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="0dp">
-        <TextView
-            android:id="@+id/option_name_1"
+
+        <Button
+            android:id="@+id/btn_user1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:layout_weight="1"
             android:background="@drawable/background"
-            android:layout_marginBottom="10dp"
+            android:drawableLeft="@drawable/user"
+            android:text="내 정보"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:paddingLeft="13dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_user2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/background"
+            android:drawableLeft="@drawable/null_star"
+            android:text="즐겨찾기"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:paddingLeft="13dp"
+            android:textStyle="bold"
             android:textColor="@color/black"
-            android:text="Name"
-            android:textSize="15sp"
-            android:gravity="center"
-            />
+            android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/option_name_2"
+        <Button
+            android:id="@+id/btn_user3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
+            android:layout_weight="1"
             android:background="@drawable/background"
-            android:gravity="center"
-            android:text="Favorites"
+            android:drawableLeft="@drawable/question_mark"
+            android:text="내손주 사용법"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:paddingLeft="13dp"
+            android:textStyle="bold"
             android:textColor="@color/black"
-            android:textSize="15sp"
-            />
-        <TextView
-            android:id="@+id/option_name_3"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_user4"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/background"
-            android:text="How to Use"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            android:gravity="center"
-            />
-
-        <TextView
-            android:id="@+id/option_name_4"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_marginBottom="10dp"
             android:background="@drawable/background"
-            android:text="Feedbacks"
-            android:textSize="15sp"
+            android:drawableLeft="@drawable/question_mark"
+            android:text="고객센터"
+            android:gravity="center_vertical"
+            android:drawablePadding="16dp"
+            android:textStyle="bold"
+            android:paddingLeft="13dp"
             android:textColor="@color/black"
-            android:gravity="center"
-            />
+            android:textSize="30sp" />
 
-        </LinearLayout>
+    </LinearLayout>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline4"

@@ -13,6 +13,7 @@
         android:orientation="vertical"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
+        android:layout_margin="25dp"
         android:weightSum="3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,10 +32,10 @@
             android:background="@drawable/background"
             android:drawableLeft="@drawable/yellow_star"
             android:drawableTop="@drawable/youtube_thumbnail1"
+            android:fontFamily="sans-serif"
             android:lines="2"
             android:text="@string/tv_link"
             android:textColorLink="@color/black"
-            android:fontFamily="sans-serif"
 
             android:textSize="23sp"
             tools:ignore="SpeakableTextPresentCheck" />
