@@ -1,4 +1,4 @@
-package com.example.test
+package com.grand.Mygrandchildren
 
 import android.annotation.SuppressLint
 import android.app.*
@@ -16,12 +16,12 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import com.example.test.FloatingActivity.Companion.ACTION_STOP_FOREGROUND
+import com.grand.Mygrandchildren.FloatingActivity.Companion.ACTION_STOP_FOREGROUND
 import kotlin.math.abs
 import kotlin.math.roundToInt
 
 
-class FloatingControlKakaotalk :Service() {
+class FloatingControlCamera :Service() {
     private var LAYOUT_FLAG: Int = 0
     private var windowManager: WindowManager? = null
     private var floatingControlView: ViewGroup? = null
@@ -41,7 +41,7 @@ class FloatingControlKakaotalk :Service() {
         }
         if(floatingControlView == null ){
             val li = getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater
-            floatingControlView = li.inflate(R.layout.layout_floating_kakaotalk, null) as ViewGroup?
+            floatingControlView = li.inflate(R.layout.layout_floating_camera, null) as ViewGroup?
 
         }
         if (intent?.action != null && intent.action.equals(
@@ -193,7 +193,7 @@ class FloatingControlKakaotalk :Service() {
             }
         })
         floatingControlView?.findViewById<View>(R.id.close_btn)?.setOnClickListener{
-            val intentStop = Intent(this, FloatingControlKakaotalk::class.java)
+            val intentStop = Intent(this, FloatingControlCamera::class.java)
             intentStop.action = ACTION_STOP_FOREGROUND
             startService(intentStop)
         }

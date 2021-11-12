@@ -1,4 +1,4 @@
-package com.example.test //CustomViewPager's location actually
+package com.grand.Mygrandchildren //CustomViewPager's location actually
 
 import android.content.Context
 import android.util.AttributeSet

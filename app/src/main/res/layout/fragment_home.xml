@@ -7,10 +7,10 @@
     android:fitsSystemWindows="true"
     android:background="#E5E5E5">
 
-    <ImageButton
+    <ImageView
         android:id="@+id/home_btn1"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/home_rectangle1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,6 +21,7 @@
 
 
     <TextView
+        android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notosanskr"
@@ -33,18 +34,20 @@
         app:layout_constraintTop_toTopOf="@+id/home_btn1"
         app:layout_constraintVertical_bias="0.50" />
 
-    <ImageButton
+    <ImageView
         android:id="@+id/home_btn2"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/home_rectangle2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.730"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toEndOf="@+id/home_btn1"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
+        app:layout_constraintVertical_bias="0.407" />
+
     <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notosanskr"
@@ -56,18 +59,21 @@
         app:layout_constraintStart_toStartOf="@+id/home_btn2"
         app:layout_constraintTop_toTopOf="@+id/home_btn2"
         app:layout_constraintVertical_bias="0.50" />
-    <ImageButton
+
+    <ImageView
         android:id="@+id/home_btn3"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/home_rectangle2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.338"
+        app:layout_constraintHorizontal_bias="0.337"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.565" />
+        app:layout_constraintTop_toBottomOf="@+id/home_btn1"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/notosanskr"
@@ -79,17 +85,19 @@
         app:layout_constraintStart_toStartOf="@+id/home_btn3"
         app:layout_constraintTop_toTopOf="@+id/home_btn3"
         app:layout_constraintVertical_bias="0.50" />
-    <ImageButton
+
+    <ImageView
         android:id="@+id/home_btn4"
-        android:layout_width="110dp"
-        android:layout_height="110dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:src="@drawable/home_rectangle1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.730"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.565" />
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toEndOf="@+id/home_btn3"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="0.054" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,12 +1,12 @@
-package com.example.test
+package com.grand.Mygrandchildren
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
-import com.example.test.fragment.GuideFragment
-import com.example.test.fragment.HomeFragment
-import com.example.test.fragment.UserFragment
-import com.example.test.fragment.VideoFragment
+import com.grand.Mygrandchildren.fragment.GuideFragment
+import com.grand.Mygrandchildren.fragment.HomeFragment
+import com.grand.Mygrandchildren.fragment.UserFragment
+import com.grand.Mygrandchildren.fragment.VideoFragment
 
 
 class MainFragmentStatePagerAdapter(fm : FragmentManager, val fragmentCount : Int) : FragmentStatePagerAdapter(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {

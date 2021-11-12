@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.test">
+    package="com.grand.Mygrandchildren">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -13,29 +13,38 @@
         android:roundIcon="@mipmap/ic_frchild_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity
+            android:name="com.grand.Mygrandchildren.FeedbackActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.grand.Mygrandchildren.HowtouseActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.grand.Mygrandchildren.ProfileActivity"
+            android:exported="true" />
 
-        <service android:name=".FloatingControlService" />
-        <service android:name=".FloatingControlMsg" />
-        <service android:name=".FloatingControlCamera" />
-        <service android:name=".FloatingControlKakaotalk" />
+        <service android:name="com.grand.Mygrandchildren.FloatingControlService" />
+        <service android:name="com.grand.Mygrandchildren.FloatingControlMsg" />
+        <service android:name="com.grand.Mygrandchildren.FloatingControlCamera" />
+        <service android:name="com.grand.Mygrandchildren.FloatingControlKakaotalk" />
 
         <activity
-            android:name=".FaqActivity"
+            android:name="com.grand.Mygrandchildren.FaqActivity"
             android:exported="true" />
         <activity
-            android:name=".IconActivity"
+            android:name="com.grand.Mygrandchildren.IconActivity"
             android:exported="true" />
         <activity
-            android:name=".FavoriteActivity"
+            android:name="com.grand.Mygrandchildren.FavoriteActivity"
             android:exported="true" />
         <activity
-            android:name=".FloatingActivity"
+            android:name="com.grand.Mygrandchildren.FloatingActivity"
             android:exported="true" />
         <activity
-            android:name=".SettingActivity"
+            android:name="com.grand.Mygrandchildren.SettingActivity"
             android:exported="true" />
         <activity
-            android:name=".IntroActivity"
+            android:name="com.grand.Mygrandchildren.IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -44,7 +53,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.grand.Mygrandchildren.MainActivity"
             android:exported="true" />
     </application>
 

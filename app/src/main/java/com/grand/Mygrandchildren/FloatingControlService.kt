@@ -1,4 +1,4 @@
-package com.example.test
+package com.grand.Mygrandchildren
 
 import android.annotation.SuppressLint
 import android.app.*
@@ -16,7 +16,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
-import com.example.test.FloatingActivity.Companion.ACTION_STOP_FOREGROUND
+import com.grand.Mygrandchildren.FloatingActivity.Companion.ACTION_STOP_FOREGROUND
 import kotlin.math.abs
 import kotlin.math.roundToInt
 

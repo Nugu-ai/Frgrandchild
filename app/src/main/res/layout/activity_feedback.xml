@@ -62,7 +62,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView" />
-<!--    인풋 설정하기-->
+    <!--    인풋 설정하기-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

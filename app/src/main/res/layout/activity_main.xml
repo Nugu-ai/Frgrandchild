@@ -8,7 +8,7 @@
     tools:context=".MainActivity"
     android:background="#E5E5E5">
 
-    <com.example.test.CustomViewPager
+    <com.grand.Mygrandchildren.CustomViewPager
         android:id="@+id/vp_ac_main_frag_pager"
         android:layout_width="match_parent"
         android:layout_height="673dp"
@@ -16,7 +16,7 @@
         android:layout_below="@id/rectangle"
         android:layout_marginTop="-42dp">
 
-    </com.example.test.CustomViewPager>
+    </com.grand.Mygrandchildren.CustomViewPager>
 
     <View
         android:id="@+id/status_bar"

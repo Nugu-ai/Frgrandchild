@@ -1,4 +1,4 @@
-package com.example.test.fragment
+package com.grand.Mygrandchildren.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.test.FaqActivity
-import com.example.test.FavoriteActivity
-import com.example.test.IconActivity
-import com.example.test.R
+import com.grand.Mygrandchildren.FaqActivity
+import com.grand.Mygrandchildren.FavoriteActivity
+import com.grand.Mygrandchildren.IconActivity
+import com.grand.Mygrandchildren.R
 import kotlinx.android.synthetic.main.fragment_home.*
 
 // TODO: Rename parameter arguments, choose names that match
