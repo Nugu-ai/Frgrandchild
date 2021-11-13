@@ -44,6 +44,14 @@
             android:orientation="horizontal"
 
             android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/close_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/delete_icon" />
+
             <ImageView
                 android:id="@+id/prev_btn"
                 android:layout_width="20dp"
@@ -58,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/notosanskr"
                 android:textColor="#332A0B"
-                android:text="메시지는 현재 테스트 단계입니다."
+                android:text="메시지는 현재\n 테스트 단계입니다."
                 android:textSize="20sp" />
 
             <TextView
@@ -68,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/notosanskr"
                 android:textColor="#332A0B"
-                android:text="메시지는 현재 테스트 단계입니다1"
+                android:text="메시지는 현재\n 테스트 단계입니다1"
                 android:textSize="20sp" />
 
             <TextView
@@ -78,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/notosanskr"
                 android:textColor="#332A0B"
-                android:text="메시지는 현재 테스트 단계입니다2"
+                android:text="메시지는 현재\n 테스트 단계입니다2"
                 android:textSize="19sp" />
             <ImageView
                 android:id="@+id/next_btn"
@@ -88,12 +96,6 @@
                 android:layout_marginLeft="20dp"
                 android:src="@drawable/move_next"
                 />
-            <ImageView
-                android:id="@+id/close_button"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="10dp"
-                android:src="@drawable/delete_icon" />
 
         </LinearLayout>
 

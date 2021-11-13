@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.grand.Mygrandchildren.R
+import com.grand.Mygrandchildren.VisibleFavorite
 import kotlinx.android.synthetic.main.fragment_video.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -33,6 +34,7 @@ class VideoFragment : Fragment() {
         }
     }
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -45,6 +47,24 @@ class VideoFragment : Fragment() {
         video_intro.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=kc2SthzglCM&t=1s"))
             startActivity(intent)
+        }
+
+        video_star.setOnClickListener{
+            video_star.visibility = View.GONE
+            video_star1.visibility = View.VISIBLE
+            VisibleFavorite.isVisible = true
+        }
+        video_star1.setOnClickListener{
+            video_star1.visibility = View.GONE
+            video_star.visibility = View.VISIBLE
+            VisibleFavorite.isVisible = false
+        }
+        if (VisibleFavorite.isVisible == true){
+            video_star.visibility = View.GONE
+            video_star1.visibility = View.VISIBLE
+        } else {
+            video_star.visibility = View.VISIBLE
+            video_star1.visibility = View.GONE
         }
     }
 

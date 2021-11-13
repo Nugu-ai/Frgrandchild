@@ -35,65 +35,67 @@
                 android:src="@drawable/delete_icon" />
 
         </RelativeLayout>
+
         <LinearLayout
             android:id="@+id/expanded_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:visibility="gone"
             android:background="#FED869"
             android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone">
 
-            android:padding="8dp">
+            <ImageView
+                android:id="@+id/close_button"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/delete_icon" />
+
             <ImageView
                 android:id="@+id/prev_btn"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginRight="20dp"
-                android:src="@drawable/move_previous"
-                />
+                android:src="@drawable/move_previous" />
+
             <TextView
                 android:id="@+id/test1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/notosanskr"
-                android:textColor="#332A0B"
                 android:text="숫자 자판에서 전화번호를 \n누르고 수화기 버튼을 \n눌러 전화를 걸어보세요"
+                android:textColor="#332A0B"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/test2"
-                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/notosanskr"
-                android:textColor="#332A0B"
                 android:text="숫자 자판에서 숫자를 \n꾹 누르고 '설정하기'를 눌러 \n단축번호를 설정해보세요.\n 설정하셨다면 해당 숫자를 \n꾹 눌러 전화를 걸어보세요."
-                android:textSize="20sp" />
+                android:textColor="#332A0B"
+                android:textSize="20sp"
+                android:visibility="gone" />
 
             <TextView
                 android:id="@+id/test3"
-                android:visibility="gone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/notosanskr"
-                android:textColor="#332A0B"
                 android:text="설정 -> 음성통화 설정 \n-> 단축번호 설정으로 이동해 \n등록한 단축번호를 관리할 수 있습니다."
-                android:textSize="19sp" />
+                android:textColor="#332A0B"
+                android:textSize="19sp"
+                android:visibility="gone" />
+
             <ImageView
                 android:id="@+id/next_btn"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:src="@drawable/move_next"
-                />
-            <ImageView
-                android:id="@+id/close_button"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_marginLeft="10dp"
-                android:src="@drawable/delete_icon" />
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/move_next" />
 
         </LinearLayout>
 

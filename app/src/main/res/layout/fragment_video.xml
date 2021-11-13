@@ -25,11 +25,21 @@
 
         <ImageView
             android:id="@+id/video_star"
+            android:visibility="visible"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="260dp"
             android:src="@drawable/null_star" />
+
+        <ImageView
+            android:id="@+id/video_star1"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="260dp"
+            android:src="@drawable/yellow_star"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/video_option"

@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
                 override fun onTabSelected(tab: TabLayout.Tab?) {
                     when (tab!!.position) {
                         0 -> highbar.text = "홈"
-                        1 -> highbar.text = "친절한 설명서"
+                        1 -> highbar.text = "친절한 설명서(서비스 예정)"
                         2 -> highbar.text = "동영상 보기"
                         3 -> highbar.text = "내 공간"
 

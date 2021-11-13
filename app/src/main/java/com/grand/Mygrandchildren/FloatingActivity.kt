@@ -23,8 +23,7 @@ class FloatingActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS)
 
         back1.setOnClickListener{
-            val nextIntent = Intent(this, MainActivity::class.java)
-            startActivity(nextIntent)
+            finish()
         }
         getResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
             if(it.resultCode == REQUEST_CODE_DRAW_PREMISSION)
